@@ -11,3 +11,5 @@ ActionMailer::Base.smtp_settings = {
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
   :domain         => 'aqueous-brook-53061.herokuapp.com',
   :authentication => :plain,
+}
+ActionMailer::Base.delivery_method = :smtp
